@@ -5,12 +5,11 @@
 </div>
 <div class="padded-container">
 
-<p>View some cats:
-  <%= link_to 'Cats we love', cats_path %>
-</p>
+<h1>Enter Your Cat Info</h1>
 
-<p>Add a cat:
-  <%= link_to 'Add yours', new_cat_path %>
-</p>
-
+<%= simple_form_for @cat do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.submit 'Create' %>
+<% end %>
 </div>

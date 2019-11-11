@@ -12,4 +12,47 @@
  *
  *= require_tree .
  *= require_self
+ *= require normalize
+
  */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+body {
+ font-family: 'IBM Plex Sans', sans-serif;
+ padding:0;
+ margin:0;
+}
+header.header {
+  background: #444;
+  color: white;
+  padding: .25em;
+
+
+  h1 {
+    color: #888;
+  }
+}
+
+form {
+  label {
+    display: inline-block;
+    width: 10%;
+    padding-bottom: 1em;
+    vertical-align: top;
+  }
+  input, textarea {
+    width: 30%;
+  }
+  input[type=submit] {
+    margin:1em 0 1em 10%;
+    border-radius: 3px;
+    padding: .2em;
+    background: blue;
+    color: white;
+    width: 20%;
+  }
+}
+
+.padded-container {
+  padding:5%;
+}

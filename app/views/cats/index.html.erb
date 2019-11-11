@@ -1,0 +1,19 @@
+<div class="container">
+  <header class="header">
+  <h1>Feeling that Inspo! Inspirational Cats</h1>
+  </header>
+</div>
+<div class="padded-container">
+
+<h2>Cats: some good boys (and girls):</h2>
+<p><%= link_to 'Add yours', new_cat_path %></p>
+<hr />
+<h3>Cat Number | Cat Name | Cat Description </h3>
+<% @cats.each_with_index do |cat, index| %>
+
+
+
+<p><%= index + 1 %> | <strong><%= cat.name %></strong> | <%= cat.description %></p>
+<% end %>
+
+</div>
